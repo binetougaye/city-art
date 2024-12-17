@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: #202324;
+    font-family: "Open Sans", serif;
+}
+nav {
+    position: fixed;
+    width: 100%;
+}
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 30px;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #181a1b;
+    color: #e8e6e3;
+    /* height: 10vh; */
+    padding: 20px;
+}
+.navbar-brand {
+    text-transform: uppercase;
+}
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.container div {
+    /* width: 206px; */
+    height: 400px;
+}
+img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+.test {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 350px;
+}
+.test p {
+    text-align: center;
+    margin-top: 30px;
+    width: 50%;
+}
+h4 {
+    text-align: center;
+    margin-top: 20px;
+    color: #eb3372;
+    font-size: 18px;
+}
+h1 {
+    font-weight: bold;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+input {
+    width: 500px;
+    padding: 10px;
+    margin: 10px;
+}
+#img {
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+@media screen and (max-width: 906px) {
+    /* Styles CSS appliqués si la condition est remplie */
+    .container {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    #img {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    input {
+        width: 300px;
+        padding: 10px;
+        margin: 10px;
+    }
+}
